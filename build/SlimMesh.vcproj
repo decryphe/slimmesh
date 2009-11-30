@@ -345,15 +345,15 @@
 			Name="ModelLoader"
 			>
 			<File
-				RelativePath="..\source\ModelLoader\IModelLoader.h"
+				RelativePath="..\source\IModelLoader.h"
 				>
 			</File>
 			<File
-				RelativePath="..\source\ModelLoader\ModelLoader.cpp"
+				RelativePath="..\source\ModelLoader.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\source\ModelLoader\ModelLoader.h"
+				RelativePath="..\source\ModelLoader.h"
 				>
 			</File>
 		</Filter>
@@ -361,11 +361,11 @@
 			Name="Model"
 			>
 			<File
-				RelativePath="..\source\Model\Model.cpp"
+				RelativePath="..\source\Model.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\source\Model\Model.h"
+				RelativePath="..\source\Model.h"
 				>
 			</File>
 		</Filter>
@@ -373,11 +373,23 @@
 			Name="Exceptions"
 			>
 			<File
-				RelativePath="..\source\Exceptions\UnknownFormatException.cpp"
+				RelativePath="..\source\UnknownFormatException.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\source\Exceptions\UnknownFormatException.h"
+				RelativePath="..\source\UnknownFormatException.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="FbxLoader"
+			>
+			<File
+				RelativePath="..\source\FbxLoader.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\FbxLoader.h"
 				>
 			</File>
 		</Filter>

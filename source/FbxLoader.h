@@ -19,50 +19,17 @@
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 * THE SOFTWARE.
 */
-#include "stdafx.h"
-#include "ModelLoader.h"
-#include "../Exceptions/UnknownFormatException.h"
+#pragma once
 
-using namespace System;
-using namespace System::IO;
-using namespace System::Collections::Generic;
+#include "IModelLoader.h"
 
 namespace SlimMesh
 {
-	ModelLoader::ModelLoader()
+	public ref class FbxLoader : IModelLoader
 	{
-		loaderMap = gcnew Dictionary<String^, IModelLoader^>();
-	}
+	public:
+		FbxLoader();
 
-	void ModelLoader::RegisterLoader(IModelLoader^ loader, String^ extension)
-	{
-		if (!loaderMap->ContainsKey(extension))
-			loaderMap->Add(extension, loader);
-	}
-
-	void ModelLoader::UnregisterLoader(String^ extension)
-	{
-		loaderMap->Remove(extension);
-	}
-
-	Model^ ModelLoader::LoadModel(System::String^ fileName)
-	{
-		IModelLoader^ loader = nullptr;
-		String^ extension = Path::GetExtension(fileName);
-
-		if (!loaderMap->TryGetValue(extension, loader))
-			throw gcnew UnknownFormatException("The extension '" + extension + "' is not a registered model format.");
-
-		return loader->LoadModel(fileName);
-	}
-
-	ModelLoader^ ModelLoader::Default::get()
-	{
-		if (defaultLoader == nullptr)
-		{
-			defaultLoader = gcnew ModelLoader();
-		}
-
-		return defaultLoader;
-	}
+		virtual Model^ LoadModel(System::String^ fileName);
+	};
 }
