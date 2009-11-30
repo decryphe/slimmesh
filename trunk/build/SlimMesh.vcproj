@@ -361,6 +361,10 @@
 			Name="Model"
 			>
 			<File
+				RelativePath="..\source\Model\Model.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\source\Model\Model.h"
 				>
 			</File>
