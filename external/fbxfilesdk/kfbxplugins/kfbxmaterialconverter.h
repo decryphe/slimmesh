@@ -66,6 +66,7 @@ class KFbxMaterialConverterImpl;
   * applied to geometries to fit the new materials system. 
   * \nosubgrouping
   */
+#pragma warning(disable : 4512)
 class KFBX_DLL KFbxMaterialConverter
 {
 public:
@@ -140,6 +141,7 @@ private:
 
 #endif // #ifndef DOXYGEN_SHOULD_SKIP_THIS 
 };
+#pragma warning(default : 4512)
 
 #include <fbxfilesdk/fbxfilesdk_nsend.h>
 

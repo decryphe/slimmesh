@@ -279,6 +279,7 @@ public:
        This class represents a node in the tree. It contains the key,
        the value, and internal tree management data.
     */
+#pragma warning(disable : 4512)
     class RecordType
     {
     public:
@@ -463,6 +464,7 @@ public:
     #endif
 #endif
     };
+#pragma warning(default : 4512)
 
 public:
     typedef RedBack_ConstIteratorType<RecordType>  ConstIteratorType;
@@ -1649,6 +1651,7 @@ template <typename VALUE_TYPE,
 class KSet2
 {
 protected:
+#pragma warning(disable : 4512)
     class KValue
     {
     public:
@@ -1670,6 +1673,7 @@ protected:
     protected:
         ValueType mValue;
     };
+#pragma warning(default : 4512)
 
     typedef KRedBlackTree<KValue, KEY_COMPARE_FUNCTOR, ALLOCATOR> StorageType;
     StorageType mTree;
