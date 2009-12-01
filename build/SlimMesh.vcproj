@@ -373,6 +373,14 @@
 			Name="Exceptions"
 			>
 			<File
+				RelativePath="..\source\ModelLoadException.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\ModelLoadException.h"
+				>
+			</File>
+			<File
 				RelativePath="..\source\UnknownFormatException.cpp"
 				>
 			</File>

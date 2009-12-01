@@ -21,24 +21,14 @@
 */
 #pragma once
 
-#include "IModelLoader.h"
-
 namespace SlimMesh
 {
-	public ref class FbxLoader : IModelLoader
+	[System::Serializable]
+	public ref class ModelLoadException : System::Exception
 	{
-	private:
-		void NormalizeScene(KFbxScene *scene);
-		void ProcessNode(KFbxNode *node);
-
 	public:
-		FbxLoader();
-
-		virtual Model^ LoadModel(System::String^ fileName);
-
-		static property System::Version^ FileVersion
-		{
-			System::Version^ get();
-		}
+		ModelLoadException();
+		ModelLoadException( System::String^ message );
+		ModelLoadException( System::String^ message, System::Exception^ innerException );
 	};
 }

@@ -22,3 +22,14 @@
 #pragma once
 
 #include <fbxsdk.h>
+#include <memory>
+
+template<typename T>
+class destroyer
+{ 
+public:
+	void operator()(T *p) 
+	{ 
+		p->Destroy();
+	} 
+}; 
