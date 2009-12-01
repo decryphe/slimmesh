@@ -19,26 +19,25 @@
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 * THE SOFTWARE.
 */
-#pragma once
+#include "stdafx.h"
+#include "ModelLoadException.h"
 
-#include "IModelLoader.h"
+using namespace System;
 
 namespace SlimMesh
 {
-	public ref class FbxLoader : IModelLoader
+	ModelLoadException::ModelLoadException()
+	: Exception( "Failed to load model." )
 	{
-	private:
-		void NormalizeScene(KFbxScene *scene);
-		void ProcessNode(KFbxNode *node);
+	}
 
-	public:
-		FbxLoader();
+	ModelLoadException::ModelLoadException( String^ message )
+	: Exception( message )
+	{
+	}
 
-		virtual Model^ LoadModel(System::String^ fileName);
-
-		static property System::Version^ FileVersion
-		{
-			System::Version^ get();
-		}
-	};
+	ModelLoadException::ModelLoadException( String^ message, Exception^ innerException )
+	: Exception( message, innerException )
+	{
+	}
 }
