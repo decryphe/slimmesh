@@ -341,66 +341,6 @@
 		/>
 	</References>
 	<Files>
-		<Filter
-			Name="ModelLoader"
-			>
-			<File
-				RelativePath="..\source\IModelLoader.h"
-				>
-			</File>
-			<File
-				RelativePath="..\source\ModelLoader.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\source\ModelLoader.h"
-				>
-			</File>
-		</Filter>
-		<Filter
-			Name="Model"
-			>
-			<File
-				RelativePath="..\source\Model.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\source\Model.h"
-				>
-			</File>
-		</Filter>
-		<Filter
-			Name="Exceptions"
-			>
-			<File
-				RelativePath="..\source\ModelLoadException.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\source\ModelLoadException.h"
-				>
-			</File>
-			<File
-				RelativePath="..\source\UnknownFormatException.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\source\UnknownFormatException.h"
-				>
-			</File>
-		</Filter>
-		<Filter
-			Name="FbxLoader"
-			>
-			<File
-				RelativePath="..\source\FbxLoader.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\source\FbxLoader.h"
-				>
-			</File>
-		</Filter>
 		<File
 			RelativePath="..\source\AssemblyInfo.cpp"
 			>
