@@ -339,8 +339,53 @@
 			AssemblyName="System.Xml, Version=2.0.0.0, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
 			MinFrameworkVersion="131072"
 		/>
+		<AssemblyReference
+			RelativePath="..\..\SlimDX\build\x64\Release\SlimDX.dll"
+			AssemblyName="SlimDX, Version=2.0.8.42, processorArchitecture=AMD64"
+			MinFrameworkVersion="131072"
+		/>
 	</References>
 	<Files>
+		<Filter
+			Name="Rendering"
+			>
+			<File
+				RelativePath="..\source\Rendering\EffectCache.h"
+				>
+			</File>
+			<File
+				RelativePath="..\source\Rendering\EffectParameterMap.h"
+				>
+			</File>
+			<File
+				RelativePath="..\source\Rendering\ModelEffect.h"
+				>
+			</File>
+			<File
+				RelativePath="..\source\Rendering\ModelRenderer9.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\Rendering\ModelRenderer9.h"
+				>
+			</File>
+			<File
+				RelativePath="..\source\Rendering\TextureCache.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Model"
+			>
+			<File
+				RelativePath="..\source\Model.h"
+				>
+			</File>
+			<File
+				RelativePath="..\source\VertexLayout.h"
+				>
+			</File>
+		</Filter>
 		<File
 			RelativePath="..\source\AssemblyInfo.cpp"
 			>
