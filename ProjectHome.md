@@ -1,0 +1,3 @@
+SlimMesh is an open source library for loading, rendering, and animating models in managed applications. It is designed to be rendering API agnostic, meaning it is equally usable from SlimDX, OpenTK, or any other managed graphics system. A SlimDX renderer is included to both demonstrate the library's features as well as allow it to be usable out of the box.
+
+Brought to you by the [SlimDX](http://www.slimdx.org) group.
